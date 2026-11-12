@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>My Task Manager</h1>
+            <p>Organize your day, achieve your goals.</p>
+        </header>
+
+        <section class="task-summary">
+            <div class="summary-card">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Completed</h3>
+                <p id="completedTasks">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Pending</h3>
+                <p id="pendingTasks">0</p>
+            </div>
+        </section>
+
+        <section class="task-input">
+            <h2>Add a New Task</h2>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task..."
+            >
+
+            <button id="addTaskBtn">Add Task</button>
+        </section>
+
+        <section class="task-section">
+            <h2>My Tasks</h2>
+
+            <ul id="taskList">
+                <!-- Tasks will appear here -->
+            </ul>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
